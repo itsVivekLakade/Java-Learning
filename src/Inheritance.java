@@ -7,11 +7,11 @@ class person {
 }
 
 class student extends person{
-    public String stud_name, stud_address;
+    public String studName, studAddress;
     student(){
         super();
-        stud_name = "Akshay";
-        stud_address = "Karnataka";
+        studName = "Akshay";
+        studAddress = "Karnataka";
     }
     void print_data(String name, String address){
         System.out.println("Name = " + name);
@@ -24,7 +24,7 @@ class temp{
     public static void main(String[] args) {
         student s1 = new student();
 
-        s1.print_data(s1.stud_name,s1.stud_address);
+        s1.print_data(s1.studName,s1.studAddress);
         s1.print_data(s1.name,s1.address);
     }
 }

@@ -1,5 +1,5 @@
 class Singleton {
-    private static Singleton single_instance = null;
+    private static Singleton singleInstance = null;
     public String s;
 
     private Singleton()
@@ -9,10 +9,10 @@ class Singleton {
 
     public static Singleton getInstance()
     {
-        if (single_instance == null)
-            single_instance = new Singleton();
+        if (singleInstance == null)
+            singleInstance = new Singleton();
 
-        return single_instance;
+        return singleInstance;
     }
 }
 

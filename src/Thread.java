@@ -1,5 +1,5 @@
 class OddEvenRunnable implements Runnable {
-    public int PRINT_NUMBERS_UPTO = 10;
+    public int printNumberUpto = 10;
     static int number = 1;
     int remainder;
     static Object lock = new Object();
@@ -8,7 +8,7 @@ class OddEvenRunnable implements Runnable {
     }
     @Override
     public void run() {
-        while (number < PRINT_NUMBERS_UPTO) {
+        while (number < printNumberUpto) {
             synchronized (lock) {
                 while (number % 2 != remainder) { // wait for numbers other than remainder
                     try {

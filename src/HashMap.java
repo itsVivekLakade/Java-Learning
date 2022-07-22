@@ -26,5 +26,8 @@ class HashMapDemo {
         for(Map.Entry i : Hm.entrySet()){
             System.out.println(i.getKey()+ " " +i.getValue());
         }
+
+        System.out.println("===Size Of Hashmap===");
+        System.out.println(Hm.size());
     }
 }

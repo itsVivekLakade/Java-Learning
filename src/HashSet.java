@@ -9,7 +9,7 @@ class HashSetDemo {
         Hs.add(2);
         Hs.add(4);
 
-        System.out.println("ArrayList: "+Hs);
+        System.out.println("Array: "+Hs);
 
         System.out.println("Printing through Iterator");
         Iterator i = Hs.iterator();

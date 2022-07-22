@@ -27,5 +27,6 @@ class QueueDemo {
 
         System.out.println("===Size Of Queue===");
         System.out.println("Size: "+q.size());
+
     }
 }
